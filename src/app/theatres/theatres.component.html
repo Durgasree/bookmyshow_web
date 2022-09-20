@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+<div class="container">
+	<!-- <div class=""> -->
+		<ul id="theatres-list" *ngFor="let theatre of theatres">		  
+		  <div class="card">
+		    <div class="card-header">
+		      {{ theatre['name'] }} 
+		    </div>
+		    <div class="card-body">
+		      <h5 class="card-title"><span href="">phone: <a href=""> {{ theatre['phone'] }} </a> </span></h5>
+		      <p class="card-text"><span >Address: {{ theatre['address'] }} </span></p>
+		      <a href="#" class="btn btn-primary"> Book Ticket</a>
+		    </div>
+		  </div>
+
+		</ul>
+	<!-- </div> -->
+</div>
